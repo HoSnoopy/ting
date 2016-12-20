@@ -26,9 +26,9 @@ else:
     print("Ting not mounted or mounted with another user") 
     sys.exit("Bye.")
 
-if os.path.isfile("/media/"+user+"/Ting/$ting/TBD.TXT") == True:
+if os.path.isfile(MountedTingPath + "/TBD.TXT") == True:
     tbd = ("TBD.TXT")
-elif os.path.isfile("/media/"+user+"/Ting/$ting/tbd.txt") == True:
+elif os.path.isfile(MountedTingPath + "/tbd.txt") == True:
     tbd = ("tbd.txt")
 else: 
     sys.exit("Cannot find the tbd.txt!")
